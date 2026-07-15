@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prediction Result</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="result-card">
+        <h1>Prediction Result</h1>
+
+        {% if prediction == "Approved" %}
+
+        <div class="approved">✅ APPROVED</div>
+
+        <p class="message">
+          The applicant is likely to get credit card approval.
+        </p>
+
+        {% else %}
+
+        <div class="rejected">❌ REJECTED</div>
+
+        <p class="message">
+          The applicant is unlikely to get credit card approval.
+        </p>
+
+        {% endif %}
+
+        <a href="/" class="btn"> Predict Again </a>
+      </div>
+    </div>
+  </body>
+</html>
