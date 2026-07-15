@@ -1,0 +1,49 @@
+```gitignore
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Environment Variables
+.env
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Python Build Files
+build/
+dist/
+*.egg-info/
+
+# Log Files
+*.log
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Model Training Cache (optional)
+*.joblib
+
+# Keep Required Model Files
+!model/model.pkl
+!model/label_encoders.pkl
+```
